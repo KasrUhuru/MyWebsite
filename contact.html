@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="webStyle.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a id="logo" href="index.html"><img src="Cog.svg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <form action="http://www.blackgoosebistro.com/pizza.php" method ="POST">
+                <h1 style="font-size: 40px;">Contact Me</h1>
+                <ul>
+                  <li>Name: <input type="text" name="customername"></li>
+                  <li>Telephone Number: <input type="text" name="telephone" placeholder="10 digits, no spaces"></li>
+                  <li>Email: <input type="text" name="email" placeholder="example@aol.com"></li>
+                  <li>Message: <br>
+                  <textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="Send me your thoughts!"></textarea></li>
+                </ul>
+                <p><input type="submit" value="Send Message"><input type="reset"></p>
+                </form>
+    </section>
+    <script>
+        var navLinks=document.getElementById('nav-links')
+        function showMenu() {
+            navLinks.style.right = '0';
+        }
+        function hideMenu() {
+            navLInks.style.right = '-200px'
+        }
+    </script>
+    </body>
+</html>

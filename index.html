@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="webStyle.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="header">
+                <nav>
+                    <a id="logo" href="index.html"><img src="Cog.svg"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+
+            <div class="text-box">
+                <h1>Matias Gabriel Rivera</h1>
+                <img id='portrait' src="Rivera, Matias.JPG" alt="A portrait of a jolly Latino male's head and shoulders. He sports a turtleneck, tastefully superposed against some flowers.">
+                <pre>
+                Defeating my imposter syndrome one webpage at a time!
+                When I'm not studying computer science, I'm doing supply chain logistics for the Reserves.
+                When I'm not working, I'm building worlds, learning languages, and tying life's mysteries together.
+                
+                <a href="projects.html" class="big-button">Check out what I've been working on!</a>
+                </pre>
+            </div>
+        </section>
+        <!------ JaveScript for Toggle Menu ------>
+        <script>
+            var navLinks=document.getElementById('nav-links')
+            function showMenu() {
+                navLinks.style.right = '0';
+            }
+            function hideMenu() {
+                navLInks.style.right = '-200px'
+            }
+        </script>
+    </body>
+</html>

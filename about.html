@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="webStyle.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a id="logo" href="index.html"><img src="Cog.svg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>About Me</h1>
+                <hr>
+                <h3>Background</h3>
+                <pre>
+                I am in the US Army Reserves after 6 years of Active Duty, with a Secret Clearance.
+                I grew up in Santa Barbara, California for 23 years until I enlisted.
+                </pre>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Supply Chain Management</li>
+                    <li>Black Belt in Kung Fu</li>
+                    <li>Multilingual: Spanish, American Sign Language, Levantine Arabic</li>
+                    <li> </li>
+                </ul>
+                <h3>Interests</h3>
+                <ul>
+                    <li>Movies: Liar Liar; Everything, Everywhere, All At Once; Spy Kids</li>
+                    <li>Shows: Netflix Castlevania; The Good Place; The Expanse; Deadwood</li>
+                    <li>Games: Portal 1 and 2; Knights of the Old Republic II; Baldur's Gate 3</li>
+
+                </ul>
+
+
+            </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById('nav-links')
+        function showMenu() {
+            navLinks.style.right = '0';
+        }
+        function hideMenu() {
+            navLInks.style.right = '-200px'
+        }
+    </script>
+    </body>
+</html>

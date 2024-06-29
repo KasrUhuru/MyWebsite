@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="webStyle.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a id="logo" href="index.html"><img src="Cog.svg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>My Projects</h1>
+                <pre class="project1">
+                    <h3><a href="https://github.com/KasrUhuru/Number_Guesser/blob/main/NumberGuesser(final%20fix)">Number Guesser</a></h3>
+                    This is my first functional JavaScript program, and I am fairly proud of it. With confidence, I proclaim this to be fridge worthy.
+                </pre>
+                <hr>
+                <pre class="project2">
+                    <h3><a href="https://kasruhuru.github.io/WebDev-ToDo-List/">To Do List</a></h3>
+                    This is a task tracker that I do not use!
+                </pre>
+                <hr>
+                <pre class="project3">
+                    <h3><a href="https://github.com/KasrUhuru/Antikythera">Antikythera</a></h3>
+                    This one is my pride and joy. I am continually building this, and it isn't quite operational yet.
+                    I am taking inspiration from 17th century Safavid cultural elements in order to create an authentic, respectful representation of Middle Eastern fantasy.
+                    This worldbuilding project derives a fictional religion based on Zoroastrian polytheism and parallels are made to Abrahamic figures.
+                    Many of the naming conventions are derived from Arabic, Creole, and Nahouatl (ancient Mayan) language, in an effort to keep consistent cultures within this world.
+                    This game is a thought experiment for me, as well. I am challenging tropes of "evil races". Ogres, trolls, and goblins are not born to be killed.
+                    They are treated as others in Western media. In my world, they have values, desires, and souls. The player will navigate their own xenophobia, or they will not.
+                    This game will accomodate both approaches to things not easily understood. The point of this world is to try and understand the "enemy" in the midst of violence.
+                    
+                    In the end, I hope to highlight who our enemies truly are, and make parallels to the real world.
+                </pre>
+            </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById('nav-links')
+        function showMenu() {
+            navLinks.style.right = '0';
+        }
+        function hideMenu() {
+            navLInks.style.right = '-200px'
+        }
+    </script>
+    </body>
+</html>
